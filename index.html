@@ -617,7 +617,10 @@
                 <div class="col-md-offset-1 col-md-5 col-sm-6">
                     <div class="single-contact-box">
                         <div class="contact-form">
-                            <form name="contact" netlify>
+                            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" >
+                                <!-- Honeypot field outside of form group -->
+                                <input type="hidden" name="bot-field" />
+                                
                                 <div class="row">
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="form-group">
@@ -630,6 +633,7 @@
                                         </div><!--/.form-group-->
                                     </div><!--/.col-->
                                 </div><!--/.row-->
+                                
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group">
@@ -637,6 +641,7 @@
                                         </div><!--/.form-group-->
                                     </div><!--/.col-->
                                 </div><!--/.row-->
+                                
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group">
@@ -644,6 +649,7 @@
                                         </div><!--/.form-group-->
                                     </div><!--/.col-->
                                 </div><!--/.row-->
+                                
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="single-contact-btn">
@@ -655,6 +661,7 @@
                         </div><!--/.contact-form-->
                     </div><!--/.single-contact-box-->
                 </div><!--/.col-->
+                
                 <div class="col-md-offset-1 col-md-5 col-sm-6">
                     <div class="single-contact-box">
                         <div class="contact-adress">
@@ -686,6 +693,7 @@
     </div><!--/.container-->
 </section><!--/.contact-->
 <!--contact end -->
+
 
 
 		<!--footer-copyright start-->
